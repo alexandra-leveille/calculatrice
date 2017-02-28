@@ -24,20 +24,27 @@ var calculatrice = function calculatrice(){
     log("click 2 !!!");
     log(saisie.value);
     var res = add();
+    var res = sub();
+    var res = mult();
+    var res = div();
     log(res);
   }
-if (typeof(a,b="number"))
 
-{
-
-
-    function add(a,b){
-      return a + b;
+  function add(a,b){
+    return a+b;
     }
 
-}
+  function sub(a,b){
+      return a-b;
+      }
 
+  function mult(a,b){
+      return a*b;
+        }
 
+  function div(a,b){
+      return a/b;
+        }
 
   btn.onclick = gererClicks;
   //btn.addEventsListener("click",gererClicks);
